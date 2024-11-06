@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content='A "Time Tracking Dashboard" solution, built with HTML for structure, Sass for responsive styling using mixins, media queries, and Grid, and JavaScript for fetching JSON data and updating the DOM.' />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" />
+  <script src="./script.js" defer></script>
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main class="grid">
+    <!-- Profile Card  -->
+    <section class="profil-section" aria-labelledby="profile-heading">
+      <figure>
+        <img src="./images/image-jeremy.png" alt="Profile picture of Jeremy Robson" />
+        <figcaption>
+          <span>Report for</span>
+          <h1>Jeremy Robson</h1>
+        </figcaption>
+      </figure>
+      <ul role="tablist" aria-label="Timeframes">
+        <li>
+          <button type="button" role="tab" aria-selected="false">
+            Daily
+          </button>
+        </li>
+        <li>
+          <button class="active" type="button" role="tab" aria-pressed="true">
+            Weekly
+          </button>
+        </li>
+        <li>
+          <button type="button" role="tab" aria-selected="false">
+            Monthly
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- card -->
+    <section class="activity work" role="tabpanel" aria-labelledby="work-title">
+      <div>
+        <div class="title-container">
+          <p class="title">Work</p>
+          <img src="./images/icon-ellipsis.svg" alt="More options for Work" tabindex="0" />
+        </div>
+        <div class="details">
+          <p class="count">32hrs</p>
+          <span>Last Week - 36hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="activity play" role="tabpanel" aria-labelledby="play-title">
+      <div>
+        <div class="title-container">
+          <p class="title">Play</p>
+          <img src="./images/icon-ellipsis.svg" alt="More options for Play" tabindex="0" />
+        </div>
+        <div class="details">
+          <p class="count">10hrs</p>
+          <span>Last Week - 8hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="activity study" role="tabpanel" aria-labelledby="study-title">
+      <div>
+        <div class="title-container">
+          <p class="title">Study</p>
+          <img src="./images/icon-ellipsis.svg" alt="More options for Study" tabindex="0" />
+        </div>
+        <div class="details">
+          <p class="count">4hrs</p>
+          <span>Last Week - 7hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="activity exercise" role="tabpanel" aria-labelledby="exercise-title">
+      <div>
+        <div class="title-container">
+          <p class="title">Exercise</p>
+          <img src="./images/icon-ellipsis.svg" alt="More options for Exercise" tabindex="0" />
+        </div>
+        <div class="details">
+          <p class="count">4hrs</p>
+          <span>Last Week - 5hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="activity social" role="tabpanel" aria-labelledby="social-title">
+      <div>
+        <div class="title-container">
+          <p class="title">Social</p>
+          <img src="./images/icon-ellipsis.svg" alt="More options for Social" tabindex="0" />
+        </div>
+        <div class="details">
+          <p class="count">5hrs</p>
+          <span>Last Week - 10hrs</span>
+        </div>
+      </div>
+    </section>
+    <section class="activity self-care" role="tabpanel" aria-labelledby="self-care-title">
+      <div>
+        <div class="title-container">
+          <p class="title">Self Care</p>
+          <img src="./images/icon-ellipsis.svg" alt="More options for Self care" tabindex="0" />
+        </div>
+        <div class="details">
+          <p class="count">2hrs</p>
+          <span>Last Week - 2hrs</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
